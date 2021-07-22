@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+   
+    transition: .5s;
+}
+
+#first, #second, #third{
+    width: calc(100vw / 3);
+    height: 100vh;
+    background: #F7e744;
+    position:absolute;
+    z-index: 1000;
+    top:0;
+    left:0;
+}
+#second{
+    left:calc(100vw / 3);
+}
+#third{
+    left:calc((100vw / 3)*2);
+}
+
+/*nav*/
+nav{
+    display: flex ;
+    width: 100%;
+    height: 10vh;
+    position: relative;
+}
+i{
+    font-size: 22px;
+    position: relative;
+}
+i:nth-child(1){
+    margin:20px 30px;
+}
+i:nth-child(2), i:nth-child(3){
+    position: absolute;
+    right:0;
+    margin:20px 30px;
+}
+i:nth-child(2){
+    margin:20px 90px;
+}
+
+/*socail media*/
+.social{
+ 
+    width:auto;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top:52%;
+    left: -11.5%;
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+.social h5{
+    font-size: 16px;
+    text-transform: uppercase;
+    display: flex;
+    padding: 0 22px;
+    font-family: 'Noto Sans', sans-serif;
+    position: relative;
+    
+}
+/*title*/
+.title{
+    position:absolute;
+    left:15%;
+    transform-origin: center;
+    transform: rotate(-90deg);
+    z-index:100;
+}
+.title h1{
+    position: relative;
+    width:500px;
+    height:100px;
+
+    top:-80px;
+    left:-80px;
+    overflow: hidden;
+}
+.title h1 .hidetext{
+  display: block;
+  font-size: 80px;
+  text-transform: uppercase;  
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -5px;
+  position: absolute;
+  left:15px;
+}
+.title h2{
+   
+    display: block;  
+    font-size: 110px;
+    text-transform: uppercase;
+    position: absolute;
+    top:-70px; 
+    left:-110px;
+    z-index: -1;
+color:#F7e744;
+font-family: 'Titillium Web', sans-serif;
+letter-spacing: 10px;
+  }
+.title h3 {
+    position: relative;
+    top:-70px;
+    left: -50px;
+    width: 300px;
+    height: 60px;
+    overflow: hidden;
+  
+  }
+.title h3 .hidetext{
+    font-size: 30px; 
+    text-transform: uppercase; 
+    position: absolute;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 0px;
+    line-height: 30px;
+    
+}
+.title p{  width:220px;
+    height: 80px;
+    position: relative;
+    top:-50px;
+    left:-50px;
+    overflow: hidden;
+}
+p .hidetext{
+    font-size: 15px;
+    position:absolute;
+    font-family: 'Noto Sans', sans-serif;
+}
+.sponsorlogo {
+    width: 160px;
+    height: 180px;
+    position:absolute;
+    right:5%;
+    bottom: 40px;
+    overflow: hidden;
+    
+}
+.sponsorlogo img{
+    width:200px;
+    position: absolute;
+    transform: rotate(-90deg);
+    top:20px;
+  
+}
+/*picture*/
+.distoration{
+    width:870px;
+    height:920px;
+    transform: scale(0.5,0.6);
+    position: absolute;
+    left:30%;
+    bottom:-37%;
+}
+
+/*tweenmax or gsap 是不是活動的物體 
+必須設為 position:absolute, 他的父親設為relative ??*/
+
+.fa-adjust{
+    color:black;
+}
+.dark .fa-adjust {
+    color:#F7e744;
+}
+body.dark{
+    background-color: #212529;
+    transition: 0.5s;
+}
+/*body.dark??? 不可以寫成body .dark*/
+.dark .title, 
+.dark .social
+{
+    color:white;
+}
+.dark i{
+    color:#F7e744;
+}
+
+h2{
+    color:#F7e744;
+}
